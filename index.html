@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+
+<!-- CSS -->
+    <!-- Reset Css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- Swiper slider Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.3/swiper-bundle.min.css">
+    <!-- Fontswesome Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- my CSS -->
+    <link rel="stylesheet" href="./css/my.css">
+
+<!-- Script -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- cookie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.3/swiper-bundle.min.js"></script>
+    <!-- my script -->
+    <script src="./js/myscript.js"></script>
+    <title>MEET PLAY SHARE, 메가박스</title>
+</head>
+<body>
+    <section class="skip-menu">
+        <a href="#movie">영화예매</a>
+        <a href="#benefit">혜택</a>
+        <a href="#curation">큐레이션</a>
+        <a href="#megabox-info">메가박스 안내</a>
+    </section>
+    <section class="popup">
+        <div class="popup-box">
+            <h2>밀수</h2>
+            <div class="img-box">
+                <a href="#"><img src="./images/clasic-list06.jpg" alt="밀수"></a>
+            </div>
+            <form class="clearfix">                
+                <label><input type="checkbox" id="chkbox"> 하루동안 보지 않기</label>
+                <i class="fas fa-times" id="btn-close"></i>                
+            </form>
+        </div>
+    </section>
+    <section id="wrap">
+        <section id="ad-top">
+            <div class="container">
+                <div class="img-box">
+                    <a href="#">
+                        <img src="./images/banner-top.jpg" alt="현대해상 바로가기">
+                    </a>
+                </div>
+                <div class="btn-close">
+                    <i class="fas fa-times"><span>닫기</span></i>
+                </div>
+            </div>            
+        </section>
+        <header id="header">
+            <div class="container">
+                <h1>
+                    <a href="./index.html">메가박스</a>
+                </h1>
+                <div class="quick-nav">
+                    <div class="quick-left">
+                        <a href="#">VIP LOUNGE</a>
+                        <a href="#">멤버십</a>
+                        <a href="#">고객센터</a>
+                    </div>
+                    <div class="quick-right">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                        <a href="#">빠른예매</a>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="nav-left">
+                        <li><a href="#">영화</a></li>
+                        <li><a href="#">예매</a></li>
+                        <li><a href="#">극장</a></li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">스토어</a></li>
+                        <li><a href="#">혜택</a></li>
+                    </ul>
+                </nav>
+                <div class="m-quick-nav clearfix">
+                    <div class="m-quick-left left">
+                        <div class="img-box" id="ticket">
+                            <a href="#">
+                                <img src="./m-images/ico-m-ticket.png" alt="예매">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="m-quick-right right">
+                        <div class="img-box">
+                            <a href="#">
+                                <img src="./m-images/ico_m_feed.png" alt="feed">
+                            </a>
+                        </div>
+                        <div class="img-box">
+                            <a href="#" id="btn-nav">
+                                <img src="./m-images/ico-m-burger.png" alt="내비버튼">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-nav">
+                    <div class="m-nav-top">
+                        <div class="container">
+                            <div class="nav-control clearfix">
+                                <p class="left"><a href="#">로그인 해주세요:)</a></p>
+                                <div class="icons right">
+                                    <div class="img-box">
+                                        <a href="#">
+                                            <img src="./m-images/ic_set.png" alt="설정">
+                                        </a>
+                                    </div>
+                                    <div class="img-box">
+                                        <a href="#" id="btn-m-nav-close">
+                                            <i class="fas fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sign-in-up clearfix">
+                                <div class="left">
+                                    <a href="#">로그인</a>
+                                    <a href="#">회원가입</a>
+                                </div>
+                                <div class="right">
+                                    <a href="#">비회원 예매확인</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-nav-bottom">
+                        <div class="container">
+                            <h2>QUICK MENU</h2>
+                            <div class="quick-item">
+                                <div class="img-box">
+                                    <a href="#">
+                                        <img src="./m-images/rnb_ic_black_movie.png" alt="영화별 예매">
+                                    </a>
+                                </div>
+                                <h3>영화별 예매</h3>
+                            </div>
+                            <div class="quick-item">
+                                <div class="img-box">
+                                    <a href="#">
+                                        <img src="./m-images/rnb_ic_black_theater.png" alt="극장별 예매">
+                                    </a>
+                                </div>
+                                <h3>극장별 예매</h3>
+                            </div>
+                            <div class="quick-item">
+                                <div class="img-box">
+                                    <a href="#">
+                                        <img src="./m-images/rnb_ic_black_special.png" alt="특별관 예매">
+                                    </a>
+                                </div>
+                                <h3>특별관 예매</h3>
+                            </div>
+                            <div class="quick-item">
+                                <div class="img-box">
+                                    <a href="#">
+                                        <img src="./m-images/rnb_ic_private.png" alt="더 부티크 프라이빗 예매">
+                                    </a>
+                                </div>
+                                <h3>더 부티크 프라이빗 예매</h3>
+                            </div>
+                            <div class="quick-item">
+                                <div class="img-box">
+                                    <a href="#">
+                                        <img src="./m-images/rnb_ic_event.png" alt="이벤트">
+                                    </a>
+                                </div>
+                                <h3>이벤트</h3>
+                            </div>
+                            <div class="quick-item">
+                                <div class="img-box">
+                                    <a href="#">
+                                        <img src="./m-images/rnb_ic_sale.png" alt="제휴/할인">
+                                    </a>
+                                </div>
+                                <h3>제휴/할인</h3>
+                            </div>
+                            <div class="quick-item">
+                                <div class="img-box">
+                                    <a href="#">
+                                        <img src="./m-images/rnb_ic_channeltalk.png" alt="상담톡">
+                                    </a>
+                                </div>
+                                <h3>상담톡</h3>
+                            </div>                           
+                        </div>
+                        <ul class="icons-sns">
+                            <li><a href="#"><img src="./m-images/sns-ico-m-facebook.png" alt="facebook"></a></li>
+                            <li><a href="#"><img src="./m-images/sns-ico-m-youtube.png" alt="youtube"></a></li>
+                            <li><a href="#"><img src="./m-images/sns-ico-m-insta.png" alt="insta"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="movie">
+            <img class="movie-bg" src="./images/clasic-list04.jpg" alt="배경">            
+            <div class="container">
+                <h2>영화예매</h2>
+                <nav>
+                    <ul>
+                        <li>박스오피스</li>
+                        <li>상영예정작</li>
+                        <li>필름소사<span>이어티</span></li>
+                        <li>클레식소사<span>이어티</span></li>
+                    </ul>
+                </nav>
+                <div class="movie-div box-office">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide box-slide01">
+                                <h3 class="movie-tit">밀수</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/movie-list01.jpg" alt="밀수">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide02">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/movie-list02.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">2</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide03">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/movie-list03.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">3</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide04">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/movie-list04.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">4</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide05">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/movie-list05.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">5</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide06">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/movie-list06.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">6</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide07">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/movie-list07.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">7</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide08">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/movie-list08.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">8</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide09">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/movie-list09.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">9</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide10">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/movie-list10.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">10</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide11">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/movie-list11.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">11</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide12">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/movie-list12.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">12</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-div movie-exp">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide box-slide01">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/exp-list01.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide02">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/exp-list02.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide03">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/exp-list03.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide04">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/exp-list04.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide05">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/exp-list05.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide06">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/exp-list06.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide07">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/exp-list07.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide08">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/exp-list08.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide09">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/exp-list09.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide10">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/exp-list10.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide11">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/exp-list11.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide12">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/exp-list12.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-div film">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide box-slide01">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/film-list01.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide02">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/film-list02.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide03">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/film-list03.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide04">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/film-list04.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide05">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/film-list05.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide06">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/film-list06.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide07">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/film-list07.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide08">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/film-list08.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide09">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/film-list09.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide10">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/film-list10.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide11">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/film-list11.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide12">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/film-list12.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-div clasic">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide box-slide01">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/clasic-list01.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide02">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/clasic-list02.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide03">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/clasic-list03.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide04">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/clasic-list04.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide05">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/clasic-list05.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide06">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/clasic-list06.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide07">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/clasic-list07.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide08">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/clasic-list08.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide09">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/clasic-list09.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide10">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/clasic-list10.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide11">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/clasic-list11.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                            <div class="swiper-slide box-slide12">
+                                <h3 class="movie-tit">킹메이커</h3>
+                                <div class="movie">
+                                    <div class="img-box movie-poster">
+                                        <img src="./images/clasic-list12.jpg" alt="킹메이커">
+                                    </div>
+                                    <p class="movie-num">1</p>
+                                    <div class="movie-txt">
+                                        <a href="#">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, vero?</p>   
+                                            <p>관람평:<span>0</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="movie-btn01"><i class="far fa-heart"></i> 152</button>
+                                <button class="movie-btn02">예매</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-bottom-nav">
+                    <ul>
+                        <li class="search-box"><i class="fas fa-search"></i><input type="search" placeholder="영화명을 입력해 주세요"></li>
+                        <li><a href="#"><i class="fas fa-calendar-alt"></i><span>상영시간표</span></a></li>
+                        <li><a href="#"><i class="fas fa-film"></i><span>박스오피스</span></a></li>
+                        <li><a href="#"><i class="fas fa-ticket-alt"></i><span>빠른예매</span></a></li>
+                    </ul>
+                </div>
+                <div class="movie-ani">왓다리 갓다리</div>
+            </div>
+        </section>
+        <section id="benefit">
+            <div class="container">
+                <h2>혜택</h2>
+                <div class="benefit-container">
+                    <div class="benefit-slider01">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/benefit01-01.jpg" alt="오리지널 티켓">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/benefit02-01.jpg" alt="네번째 다이어리">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/benefit03-01.jpg" alt="멤버십 이벤트">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/benefit04-01.jpg" alt="LGU+">
+                                </div>
+                            </div>
+                            <!-- 컨트럴 버튼 -->
+                            <div class="swiper-controls">
+                                <!-- 스크롤 -->
+                                <div class="swiper-myscrollbar"></div>
+                                <!-- 네비버튼 -->
+                                <div class="swiper-mybutton-prev"><i class="fas fa-angle-left"></i></div>
+                                <div class="swiper-mybutton-next"><i class="fas fa-angle-right"></i></div>
+                                <!-- 시작번튼 -->
+                                <div class="swiper-mystart"><i class="fas fa-play"></i></div>
+                                <!-- 멈춤버튼 -->
+                                <div class="swiper-mypause"><i class="fas fa-pause"></i></div>
+                                <!-- 페이지버튼 -->
+                                <div class="swiper-mypagination">1/4</div>
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class="benefit-slider02">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/benefit01-02.jpg" alt="오리지널 티켓">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/benefit02-02.jpg" alt="네번째 다이어리">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/benefit03-02.jpg" alt="멤버십 이벤트">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/benefit04-02.jpg" alt="LGU+">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefit-banner01">
+                        <a href="#"><img src="./images/benefit-banner03.jpg" alt="킹메이커"></a>
+                    </div>
+                    <div class="benefit-banner02">
+                        <a href="#"><img src="./images/benefit-banner13.jpg" alt="나도 영화 평론가"></a>
+                    </div>
+                    <div class="benefit-ad">
+                        <a href="#"><img src="./images/banner-mid.jpg" alt="현대해상 광고2"></a>
+                    </div>
+                </div>
+                <div class="benefit-nav">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/ico-benefit01.png" alt="vip">
+                            </a>
+                            <a href="#">
+                                VIP LAUNGE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/ico-benefit02.png" alt="member">
+                            </a>
+                            <a href="#">
+                                멤버십
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/ico-benefit03.png" alt="할인카드">
+                            </a>
+                            <a href="#">
+                                할인카드
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/ico-benefit04.png" alt="이벤트">
+                            </a>
+                            <a href="#">
+                                이벤트
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/ico-benefit05.png" alt="스토어">
+                            </a>
+                            <a href="#">
+                                스토어
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>            
+        </section>
+        <section id="curation">
+            <div class="container">
+                <h2>큐레이션</h2>
+                <div class="curation-container clearfix">
+                    <div class="select-poster">
+                        <div class="img-box">
+                            <a href="#"><img src="./images/curation-list01.jpg" alt="어나더 라운드"></a>                            
+                        </div>
+                        <div class="btn-select-poster">
+                            <button>상세정보</button>
+                            <button>예매</button>
+                        </div>
+                        <div class="over-box">
+                            MEGABOX<br>
+                            CLASSIC<br>
+                            SOCIETY
+                        </div> 
+                    </div>
+                    <div class="swiper">
+                        <ul class="curation-posters swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="img-box">
+                                    <img src="./images/curation-list01.jpg" alt="어나더 라운드">
+                                </div>
+                                <p>어나더 라운드</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img-box">
+                                    <img src="./images/curation-list02.jpg" alt="드라이브 마이카">
+                                </div>
+                                <p>드라이브 마이카</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img-box">
+                                    <img src="./images/curation-list03.jpg" alt="미싱타는 여자들">
+                                </div>
+                                <p>미싱타는 여자들</p>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="img-box">
+                                    <img src="./images/curation-list04.jpg" alt="더마더">
+                                </div>
+                                <p>더마더</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section id="megabox-info">
+            <div class="container">
+                <h2>메가박스 안내</h2>
+                <div class="mega-list">
+                    <ul>
+                        <li><a href="#"><img src="./images/megainfo01.png" alt="info01"></a></li>
+                        <li><a href="#"><img src="./images/megainfo02.png" alt="info02"></a></li>
+                        <li><a href="#"><img src="./images/megainfo03.png" alt="info03"></a></li>
+                        <li><a href="#"><img src="./images/megainfo04.png" alt="info04"></a></li>
+                        <li><a href="#"><img src="./images/megainfo05.png" alt="info05"></a></li>
+                        <li><a href="#"><img src="./images/megainfo06.png" alt="info06"></a></li>
+                    </ul>
+                </div>
+            </div>       
+            <div class="notice">
+                <div class="container">
+                    <ul>
+                        <li>메가박스</li>
+                        <li><a href="#"><span>[이벤트]</span>[당첨자공지] 내 통장결제 관람권 프로모션</a></li>
+                        <li>23.07.28</li>
+                        <li><a href="#">더보기</a></li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="megainfo-list">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./images/ico-megainfo01.png" alt="고객센터"></a>
+                            <a href="#">고객센터</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/ico-megainfo02.png" alt="자주 묻는 질문"></a>
+                            <a href="#">자주 묻는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/ico-megainfo03.png" alt="1:1문의"></a>
+                            <a href="#">고객문의</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/ico-megainfo04.png" alt="단체/대관문의"></a>
+                            <a href="#">단체/대관문의</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/ico-megainfo05.png" alt="분실물 문의/접수"></a>
+                            <a href="#">분실물 문의/접수</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/ico-megainfo06.png" alt="더 부티크 프리이빗 대관예매"></a>
+                            <a href="#">더 부티크 프라이빗 대관예매</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </section>
+        <section id="ad-bottom">
+            <div class="container">
+                <h2>광고</h2>
+                <div class="img-box">
+                    <a href="#"><img src="./images/banner-bottom.jpg" alt="현대해상"></a>
+                </div>
+            </div>            
+        </section>
+        <section id="bnb">
+            <div class="container">
+                <h2>모바일 화면 아래 내비게이션</h2>
+                <div class="bnb-list">
+                    <ul>
+                        <li>                            
+                            <a href="#">홈</a>
+                        </li>
+                        <li>                            
+                            <a href="#">스토어</a>
+                        </li>
+                        <li>                            
+                            <a href="#">예매</a>
+                        </li>
+                        <li>
+                            <a href="#">이벤트</a>
+                        </li>
+                        <li>
+                            <a href="#">MY</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>            
+        </section>
+        <footer id="footer">
+            <div class="container clearfix">
+               <div class="footer-left">
+                    <nav>
+                        <ul class="clearfix">
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li><a href="#">제휴/광고/부대사업문의</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">위치기반서비스 이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-left-bottom clearfix">
+                        <div class="img-box"><a href="./index.html"><img src="./images/logo-white.png" alt="시작패이지로"></a></div>
+                        <address>
+                            인천광역시 서구 원당대로685번길 6 (마전동) ARS 5959-5959<br>
+                            대표자명 조경화 · 개인정보보호책임자 조경화 · 사업자등록번호 599-59-59595<br>
+                            COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+                        </address>
+                    </div>
+               </div>
+               <div class="footer-right">
+                    <div class="search">
+                        <i class="fas fa-search"></i> 극장찾기
+                    </div>
+                    <ul class="sns clearfix">
+                        <li><a href="#"><img src="./images/ico-facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="./images/ico-googleplay.png" alt="googleplay"></a></li>
+                        <li><a href="#"><img src="./images/ico-instagram.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="./images/ico-twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="./images/ico-appstore.png" alt="appstore"></a></li>
+                    </ul>
+               </div>
+            </div>            
+        </footer>
+    </section>
+</body>
+</html>
